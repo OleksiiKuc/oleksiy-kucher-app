@@ -1,0 +1,25 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+      <h3>Catalog</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <mat-grid-list cols="3" rowHeight="200px">
+      <mat-grid-tile *ngFor="let item of items">
+        <img height="200px" src="{{item.image}}" alt="{{item.name}}">
+        <mat-grid-tile-footer>
+          <h1 matLine>{{item.name | uppercase}}</h1>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+
+</div>
+
