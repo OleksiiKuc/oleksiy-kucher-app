@@ -1,3 +1,5 @@
+import { Comment } from "./comment";
+
 export class Item {
   id: string = "";
   name: string = "";
@@ -7,4 +9,5 @@ export class Item {
   price: string = "";
   description: string = "";
   featured: boolean = false;
+  comments: Comment[] = [];
 }
